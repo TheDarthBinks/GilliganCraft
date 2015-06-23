@@ -4,6 +4,8 @@ import java.util.Random;
 
 import com.gilligancraft.gilligancraft.block.ModBlocks;
 
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -14,7 +16,9 @@ import cpw.mods.fml.common.IWorldGenerator;
 public class WorldGeneratorGilligancraft implements IWorldGenerator {
 	WorldGenBlackSand blackSand = new WorldGenBlackSand(ModBlocks.blockBlackSand, 7);
 
-	@Override
+
+
+    @Override
 	public void generate(Random random, int chunkX, int chunkZ, World world,
 			IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 		switch (world.provider.dimensionId) {
@@ -32,6 +36,8 @@ public class WorldGeneratorGilligancraft implements IWorldGenerator {
 
 	private void GenerateOverworld(Random random, int x, int z, World world) {
 		blackSand.generate(world, random, x, world.getTopSolidOrLiquidBlock(x, z), z);
+
+
 	}
 
 	private void GenerateEnd(Random random, int x, int z, World world) {

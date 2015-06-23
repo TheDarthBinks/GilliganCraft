@@ -1,5 +1,6 @@
 package com.gilligancraft.gilligancraft;
 
+import com.gilligancraft.gilligancraft.world.gen.feature.WorldGenBananaTree;
 import net.minecraftforge.common.config.Configuration;
 
 import com.gilligancraft.gilligancraft.block.ModBlocks;
@@ -56,6 +57,7 @@ public class GilliganCraft {
 		ModBlocks.init();
 		ModItems.init();
 		GameRegistry.registerWorldGenerator(new WorldGeneratorGilligancraft(), 1);
+      
 	}
 
 	@Mod.EventHandler

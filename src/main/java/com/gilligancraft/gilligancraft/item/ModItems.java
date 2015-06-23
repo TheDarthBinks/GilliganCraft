@@ -3,6 +3,8 @@ package com.gilligancraft.gilligancraft.item;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -14,7 +16,12 @@ public final class ModItems {
 
 	public static ToolMaterial BAMBOO = EnumHelper.addToolMaterial("BAMBOO", 0, 119, 2.0F, 0.0F, 0);
 
+
+    public static ItemFood bananaFood;
 	public static Item itemBambooSandRake;
+    public static ItemBlock ItemLeafBlock;
+    public static Item ItemSaplingBlock;
+
 
 	public static void init() {
 		GameRegistry.registerItem(
@@ -24,5 +31,14 @@ public final class ModItems {
 		// TODO Replace sticks with bamboo when it has been added
 		GameRegistry.addRecipe(new ItemStack(itemBambooSandRake),
 				new Object[] { "AAA", " A ", " A ", 'A', Items.stick });
+
+        // Add Banana
+        bananaFood = new ItemBananaFood(4, 0.3f, false);
+
+
+
+
+
+
 	}
 }

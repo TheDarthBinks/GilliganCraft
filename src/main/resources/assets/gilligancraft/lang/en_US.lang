@@ -1,2 +1,7 @@
 item.gilligancraft_sandRakeBamboo.name=Bamboo Sand Rake
 tile.gilligancraft_blackSand.name=Black Sand
+item.gilligancraft_bananaFood.name=Banana
+tile.log_banana.name=Banana Wood
+tile.sapling_banana.name=Banana Sapling
+tile.sapling_coconut.name=Coconut Sapling
+tile.leaves_banana.name=Banana Leaves
